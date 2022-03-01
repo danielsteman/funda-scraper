@@ -3,7 +3,8 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 import time
-from selenium.webdriver.chrome.options import Options  
+from selenium.webdriver.chrome.options import Options
+from fake_useragent import UserAgent
 
 url = 'https://www.funda.nl/huur/amsterdam/0-1500/3+kamers/'
 page = requests.get(url, timeout=(3.05, 27))
